@@ -206,6 +206,18 @@ public class ClientBuilder {
         return withRetryMiddleware(new RetryMiddleware(maxRetries));
     }
 
+    public ClientBuilder withQueueMiddleware(Supplier<QueueMiddleware> retryMiddleware) {
+        return addMiddleware(retryMiddleware.get());
+    }
+
+    public ClientBuilder withQueueMiddleware(QueueMiddleware retryMiddleware) {
+        return withQueueMiddleware(() -> retryMiddleware);
+    }
+
+    public ClientBuilder withQueueMiddleware(final int maxConcurrency) {
+        return withQueueMiddleware(new QueueMiddleware(maxConcurrency));
+    }
+
     public ClientBuilder withOAuthMiddleware(final Supplier<OAuthMiddleware> oAuthMiddleware) {
         this.oAuthMiddleware = oAuthMiddleware;
         return this;

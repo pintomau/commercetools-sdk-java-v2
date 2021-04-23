@@ -7,6 +7,8 @@ dependencies {
     api commons.lang3
     api "org.slf4j:slf4j-api:${versions.slf4j}"
     api "net.jodah:failsafe:${versions.failsafe}"
+    compile "io.github.resilience4j:resilience4j-retry:${versions.resilience4j}"
+    compile "io.github.resilience4j:resilience4j-bulkhead:${versions.resilience4j}"
 }
 
 

@@ -78,10 +78,11 @@ ext {
             jackson: "2.12.3",
             junit: "4.12",
             validation: "2.0.1.Final",
-            assertJ: "3.8.0",
+            assertJ: "3.18.0",
             gson: "2.8.6",
             awaitility: "4.0.2",
-            failsafe: "2.4.0"
+            failsafe: "2.4.0",
+            resilience4j: "1.7.0"
     ]
 
     commons = [
