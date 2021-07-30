@@ -39,6 +39,8 @@ The benefit is that after the <strong>ApiRoot</strong> has been defined, it's ea
         final ByProjectKeyRequestBuilder projectKey = ApiFactory.createForProject("projectKey", () -> apiHttpClient);
 ```
 
+{% gist 7bcc34febb6868f078cc54e32d47deec %}
+
 <a id="timout-setting"></a>
 ### Timeout Setting
 In both versions is the <strong>executeBlocking()</strong> method that sets the time out.
