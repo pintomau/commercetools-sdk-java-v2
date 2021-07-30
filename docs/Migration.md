@@ -39,7 +39,7 @@ The benefit is that after the <strong>ApiRoot</strong> has been defined, it's ea
         final ByProjectKeyRequestBuilder projectKey = ApiFactory.createForProject("projectKey", () -> apiHttpClient);
 ```
 
-{% gist 7bcc34febb6868f078cc54e32d47deec %}
+<script src="https://gist.github.com/jenschude/7bcc34febb6868f078cc54e32d47deec.js"></script>
 
 <a id="timout-setting"></a>
 ### Timeout Setting
